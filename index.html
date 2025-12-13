@@ -1,86 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZAPIROX – Plataforma de Automatización</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZAPIROX – Plataforma de Automatización Inteligente</title>
+
+  <meta
+    name="description"
+    content="ZAPIROX es una plataforma SaaS de automatización que conecta servicios como Gmail, Google Sheets, Slack, WhatsApp Cloud API y Webhooks para crear flujos inteligentes sin necesidad de programar."
+  />
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 40px;
-      background: #f7f9fc;
-      color: #222;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f6f8fc;
+      color: #1b1b1b;
       line-height: 1.7;
     }
 
-    h1 {
-      color: #4a3aff;
-      font-size: 2.4rem;
+    header {
+      background: linear-gradient(135deg, #4a3aff, #6f62ff);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
     h2 {
+      margin-top: 50px;
       color: #333;
-      margin-top: 40px;
-    }
-
-    p {
-      font-size: 1.15rem;
+      font-size: 2rem;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      padding: 25px;
       margin-top: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+    }
+
+    ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .integrations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .badge {
+      background: #ecebff;
+      color: #4a3aff;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid #d9d4ff;
     }
 
     footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #666;
+      margin-top: 60px;
+      padding: 30px;
       text-align: center;
+      background: #eef1f7;
+      color: #444;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 
 <body>
+  <!-- HERO -->
+  <header>
+    <h1>ZAPIROX</h1>
+    <p>
+      Automatiza, conecta y acelera tu negocio. ZAPIROX integra tus aplicaciones favoritas
+      para crear flujos automáticos sin escribir una sola línea de código.
+    </p>
+  </header>
 
-  <h1>ZAPIROX</h1>
-  <p><strong>ZAPIROX</strong> es una plataforma SaaS de automatización que permite conectar 
-  servicios como Gmail, Google Sheets, WhatsApp Cloud API, Slack y Webhooks para crear 
-  flujos automáticos sin escribir código. Nuestro objetivo es ofrecer una herramienta simple 
-  y poderosa para que empresas y usuarios optimicen tareas repetitivas.</p>
+  <div class="container">
+    
+    <!-- INTRO -->
+    <div class="card">
+      <h2>¿Qué es ZAPIROX?</h2>
+      <p>
+        ZAPIROX es una plataforma SaaS enfocada en automatización inteligente. Permite a
+        usuarios y empresas optimizar tareas repetitivas conectando servicios populares como
+        Gmail, Google Sheets, Slack, WhatsApp Cloud API y Webhooks personalizados.
+      </p>
+      <p>
+        Diseñado para ser simple y poderoso, ZAPIROX permite crear flujos completamente
+        automatizados sin necesidad de experiencia técnica.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>¿Qué ofrecemos?</h2>
-    <p>ZAPIROX permitirá a los usuarios:</p>
-    <ul>
-      <li>Crear automatizaciones personalizadas sin necesidad de programar.</li>
-      <li>Integrar múltiples aplicaciones y servicios populares.</li>
-      <li>Configurar triggers, acciones y flujos inteligentes.</li>
-      <li>Acceder a funciones avanzadas según su plan de suscripción.</li>
-    </ul>
-  </div>
+    <!-- FEATURES -->
+    <div class="card">
+      <h2>¿Qué puedes hacer con ZAPIROX?</h2>
+      <ul>
+        <li>Crear automatizaciones personalizadas en minutos.</li>
+        <li>Integrar múltiples aplicaciones sin programar.</li>
+        <li>Gestionar flujos automáticos con triggers y acciones inteligentes.</li>
+        <li>Sincronizar datos entre distintas plataformas.</li>
+        <li>Ahorrar horas de trabajo operativo semanal.</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>Planes y Suscripciones</h2>
-    <p>Los usuarios podrán elegir entre diferentes planes mensuales para acceder a funciones 
-    avanzadas, límites ampliados y más integraciones. Los pagos se procesarán mediante un 
-    sistema seguro de checkout dirigido.</p>
-  </div>
+    <!-- HOW IT WORKS -->
+    <div class="card">
+      <h2>¿Cómo funciona?</h2>
+      <ul>
+        <li>1. El usuario crea una cuenta.</li>
+        <li>2. Selecciona un plan según sus necesidades.</li>
+        <li>3. Conecta sus aplicaciones favoritas.</li>
+        <li>4. Construye flujos visuales de automatización.</li>
+        <li>5. ZAPIROX ejecuta las tareas automáticamente.</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>Estado del Proyecto</h2>
-    <p>ZAPIROX actualmente se encuentra en desarrollo activo. Esta página sirve como 
-    presentación oficial del producto mientras se prepara su lanzamiento completo.</p>
+    <!-- INTEGRATIONS -->
+    <div class="card">
+      <h2>Integraciones disponibles</h2>
+      <p>ZAPIROX te permite trabajar con servicios ampliamente utilizados:</p>
+
+      <div class="integrations-grid">
+        <div class="badge">Gmail</div>
+        <div class="badge">Google Sheets</div>
+        <div class="badge">Slack</div>
+        <div class="badge">WhatsApp Cloud API</div>
+        <div class="badge">Webhooks</div>
+        <div class="badge">API REST</div>
+      </div>
+    </div>
+
+    <!-- PLANS -->
+    <div class="card">
+      <h2>Planes y suscripciones</h2>
+      <p>
+        ZAPIROX ofrece distintos niveles de suscripción para adaptarse a las necesidades de
+        cada usuario. Entre ellos:
+      </p>
+      <ul>
+        <li><strong>BASIC:</strong> Automatización esencial.</li>
+        <li><strong>PRO:</strong> Integraciones ampliadas y más flujos.</li>
+        <li><strong>PLATINUM:</strong> Capacidades avanzadas y soporte prioritario.</li>
+        <li><strong>ENTERPRISE:</strong> Para empresas con necesidades de gran escala.</li>
+        <li><strong>DIAMOND:</strong> Todo ilimitado para usuarios de alto rendimiento.</li>
+      </ul>
+    </div>
+
   </div>
 
   <footer>
     <p><strong>Contacto:</strong> soporte@zapirox.com</p>
     <p>ZAPIROX © 2025 – Todos los derechos reservados.</p>
-  </footer
+  </footer>
+</body>
+</html>
